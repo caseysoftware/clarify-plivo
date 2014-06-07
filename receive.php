@@ -1,6 +1,8 @@
 <?php
 
-include 'vendor/autoload.php';
+use OP3Nvoice\Bundle;
+
+include __DIR__.'/vendor/autoload.php';
 
 $apiKey = 'update with your api key';
 
@@ -16,5 +18,5 @@ $recording_url = $_POST['RecordingUrl'];
 
 $jsonData = '{"to": "'.$to.'", "from": "'.$from.'"}';
 
-$bundle = new OP3Nvoice\Bundle($apiKey);
+$bundle = new Bundle($apiKey);
 $bundle->create($recording_url, 'phone recording', '', '', $jsonData);

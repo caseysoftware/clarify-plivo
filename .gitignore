@@ -1,5 +1,2 @@
-.idea/*
-
-creds.php
-
-vendor/op3nvoice/op3nvoice-helper/
+/.idea
+/vendor
